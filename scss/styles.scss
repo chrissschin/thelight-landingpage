@@ -1,17 +1,23 @@
 $link-hover: #FF0000;
 $text-color: #444444;
 $background: #FCFCFC;
-$sml-fnt: 12px;
+$sml-fnt: 10px;
 
 
 html, body {
+	box-sizing: border-box;
 	height: 100%;
+	font-size: $sml-fnt;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
 	background-color: $background;
 	color: $text-color;
-	font-family: 'courier new';
+	font-family: 'courier new',courier,helvetica;
 }
 
 a {
@@ -32,32 +38,99 @@ li {
 	display: list-item;
 }
 
+.button-div {
+	text-align: right;
+}
+
+.submit {
+	background: #FF0000;
+	color: white;
+	border: none;
+	margin-top: 15px;
+}
+
 .nav-links {
-	margin-top: 10px;
+	margin-top: 30px;
 	a {
-		margin-top: 13px;
+		margin-top: 8px;
 		padding: 2px
 	}
 }
 
+.contact-form {
+	margin:0 auto;
+	margin-top: 25px;
+	float:none;
+	width:221px;
+
+}
+
+.contact-links {
+	display:inline;
+	li {
+		margin-top: 5px;
+	}
+}
+
+.left-links {
+	width:200px;
+	float:left;
+}
+
+form {
+	padding-left: 20px;
+	border-left: 1px solid black;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+input {
+	width: 200px;
+}
+
+textarea {
+	resize: none;
+	height: 150px;
+	width: 200px;
+}
+
+input, textarea {
+	background: #FFFFFF;
+	border: 1px solid #1C1C1C;
+}
+
 #main-header {
 	position: relative;
-	top: 40%;
-	h1 {
-		position: relative;
-		margin:0 auto;
-		text-indent: -9999px;
-		background-size: cover;
-		background-position: center;
-		background-image: url(../images/thelight2.png);
-		background-repeat: no-repeat;
-		height: 100px;
-		width: 113px;
-	}
+	top: 30%;
+}
+
+#contact-header {
+	position: relative;
+	top: 15%;
+}
+
+
+.logo {
+	position: relative;
+	margin:0 auto;
+	text-indent: -9999px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../images/thelight.png);
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 113px;
 }
 
 .col-centered {
 	text-align: center;
 	margin: 0 auto;
 	float: none;
+}
+
+.tx-lft {
+	text-align: left;
 }
