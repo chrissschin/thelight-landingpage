@@ -1,0 +1,63 @@
+$link-hover: #FF0000;
+$text-color: #444444;
+$background: #FCFCFC;
+$sml-fnt: 12px;
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: $background;
+	color: $text-color;
+	font-family: 'courier new';
+}
+
+a {
+	color: $text-color;
+	display:inline-block;
+	font-size: $sml-fnt;
+	font-weight: bold;
+}
+
+a:hover {
+	background-color: $link-hover;
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+	display: list-item;
+}
+
+.nav-links {
+	margin-top: 10px;
+	a {
+		margin-top: 13px;
+		padding: 2px
+	}
+}
+
+#main-header {
+	position: relative;
+	top: 40%;
+	h1 {
+		position: relative;
+		margin:0 auto;
+		text-indent: -9999px;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../images/thelight2.png);
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 113px;
+	}
+}
+
+.col-centered {
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
