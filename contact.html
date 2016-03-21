@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 	<script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+	<script src="./form.php"></script>
 	<script src="./main.js"></script>
 </head>
 <body>
@@ -16,18 +17,22 @@
             </div>
         </div>
 		<div class="contact-form">
-			<form class="col-centered tx-lft" action="">
+			<form class="col-centered tx-lft" role="form" action="./contact.php" method="post">
 				<div>
-			        <label for="name">Full Name:</label>
-			        <input type="text" id="name" />
+			        <label for="c-form-name">Full Name:</label>
+			        <input type="text" name="name" id="c-form-name" />
 			    </div>
 			    <div>
-			        <label for="mail">E-mail:</label>
-			        <input type="email" id="mail" />
+			        <label for="c-form-email">E-mail:</label>
+			        <input type="text" name="email" id="c-form-email" />
+			    </div>
+				<div>
+			        <label for="c-form-subject">Subject:</label>
+			        <input type="text" name="subject" id="c-form-subject" />
 			    </div>
 			    <div>
-			        <label for="msg">Message:</label>
-			        <textarea id="msg"></textarea>
+			        <label for="c-form-message">Message:</label>
+			        <textarea name="message" id="c-form-message"></textarea>
 			    </div>
 				<div class="button-div">
 			        <button class="submit" type="submit">Submit</button>
